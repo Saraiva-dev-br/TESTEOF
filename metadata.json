@@ -1,0 +1,8 @@
+{
+  "name": "Oficina do Aprendiz PI",
+  "description": "Intermediação e encaminhamento de jovens para oportunidades profissionais em Teresina - PI. Conectando talentos ao mercado de trabalho.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

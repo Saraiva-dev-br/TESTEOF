@@ -1,0 +1,54 @@
+@import "tailwindcss";
+
+@theme {
+  --color-brand-primary: #4b0d59;
+  --color-brand-purple: #812392;
+  --color-brand-purple-dark: #531062;
+  --color-brand-purple-deep: #23092c;
+  --color-brand-plum-dark: #17081d;
+  --color-brand-plum-darker: #120518;
+  --color-brand-gold: #ffc928;
+  --color-brand-gold-hover: #e6b420;
+  --color-brand-bg-soft: #f7f3f8;
+  --color-brand-border: #eadfeb;
+  --color-brand-text-muted: #716575;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+  }
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #f7f3f8;
+}
+::-webkit-scrollbar-thumb {
+  background: #d8c2dc;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #a985b0;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.8;
+    transform: scale(1);
+  }
+  50% {
+    opacity: 1;
+    transform: scale(1.04);
+  }
+}
+
+.pulse-glow {
+  animation: pulseGlow 3s infinite ease-in-out;
+}
+
